@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+.dynamic-nav {
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  background: #2F302C;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 0 1rem;
+  margin: -0.5rem;
+  margin-bottom: 1rem;
+
+  .logo-icon {
+    height: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  .ecomm-logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: inline;
+    align-items: center;
+  }
+
+  .menu-items {
+    margin-left: auto;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    li {
+      padding: 0.5rem 0;
+      a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #FFD700;
+        }
+      }
+    }
+
+    .more {
+      position: relative;
+      transition: color 0.3s ease;
+
+      &:hover .more-items {
+        display: block;
+      }
+
+      .dropdown-icon {
+        margin-left: 5px; /* Adjust spacing between "MORE" and icon */
+      }
+
+      .more-items {
+        display: none;
+        position: absolute;
+        list-style: none;
+        background: #2F302C;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        li {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+
+  .search-bar {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+
+    .search-container {
+      position: relative;
+      input {
+        padding-left: 30px;
+        margin: 1.2rem 0;
+        padding: 0.5rem;
+        border-radius: 0; /* Remove border-radius */
+        border: none; /* Remove border */
+        background-color: transparent; /* Set background color to transparent */
+        color: #ffffff9c;
+        width: 200px;
+        font-family: 'Space Grotesk', sans-serif;
+        transition: border-color 0.3s ease;
+        text-align: center;
+        border-bottom: 1px solid #ffffff; /* Only bottom border */
+        font-size: 1rem; /* Adjust font size */
+    
+        &:focus {
+          outline: none;
+          border-color: #FFD700;
+        }
+      }
+    
+      .search-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffffff9c;
+      }
+    }
+
+    .featured-products{
+      background:none;
+    }
+  }
+}

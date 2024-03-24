@@ -1,0 +1,24 @@
+// Define color, font, and other variables
+$primary-color: #007bff;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+
+
+
+// Define breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Define base navbar size
+$navbar-height-base: 50px; // Base height of the navbar
+$navbar-padding-base: 1rem; // Base padding of the navbar
+
+// Define mixin for responsive font size
+@mixin responsive-font-size($small, $large) {
+  font-size: $small;
+  @media (min-width: $breakpoint-md) {
+    font-size: $large;
+  }
+}

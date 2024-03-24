@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+}
+
+// Responsive typography
+body {
+  @include respond-to(small) {
+    font-size: 14px;
+  }
+
+  @include respond-to(medium) {
+    font-size: 16px;
+  }
+}
+
+// Any additional global styles can go here
